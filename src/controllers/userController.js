@@ -1,5 +1,4 @@
 import { UserService } from '../services/userService.js';
-import { ConfirmCodeService } from '../services/confirmCodeService.js';
 
 class UserController {
     async login(req, res) {

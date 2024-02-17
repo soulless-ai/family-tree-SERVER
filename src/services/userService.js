@@ -1,9 +1,6 @@
 import * as UserModel from '../models/User.js';
 
 import { hash, hashCompare } from '../utils/hash.js';
-import { createAuthToken } from '../utils/tokenUtils.js';
-
-import { hash, hashCompare } from '../utils/hash.js';
 
 class UserService {
     constructor() {}
@@ -16,7 +13,7 @@ class UserService {
     }
 
     async register(userData) {
-        return createAuthToken(await UserModel.register(userData));
+        return await UserModel.register(userData);
     }
 }
 

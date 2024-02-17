@@ -30,14 +30,3 @@ export const createPoolClients = async () => createPool({
         rejectUnauthorized: config.poolClients.ssl.rejectUnauthorized
     }
 });
-
-export const createPoolService = async () => createPool({
-    user: config.poolService.user,
-    host: config.poolService.host,
-    database: config.poolService.database,
-    password: config.poolService.password,
-    port: config.poolService.port,
-    ssl: {
-        rejectUnauthorized: config.poolService.ssl.rejectUnauthorized
-    }
-});
