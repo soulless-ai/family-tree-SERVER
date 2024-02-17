@@ -1,6 +1,6 @@
 export default {
     serverDomain: '127.0.0.1',
-    serverPort: 3000,
+    serverPort: 3001,
     poolClients: {
         user: 'db_ivgy_user',
         host: 'dpg-cn84h9ol5elc738r3c70-a.oregon-postgres.render.com',
