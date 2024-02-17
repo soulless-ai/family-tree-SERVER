@@ -1,5 +1,5 @@
 export default {
-    serverDomain: 'server-hk59.onrender.com',
+    serverDomain: '127.0.0.1',
     serverPort: 3000,
     poolClients: {
         user: 'db_ivgy_user',
