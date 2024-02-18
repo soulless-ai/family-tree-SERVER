@@ -1,5 +1,5 @@
 import express from 'express';
-import https from 'https';
+import http from 'http';
 import cors from 'cors';
 import config from './config.js';
 
@@ -35,7 +35,7 @@ const createWorker = async () => {
     app.use(errorHandler);
 
 
-    https.createServer(app).listen(config.serverPort, config.serverDomain, () => {
+    http.createServer(app).listen(config.serverPort, config.serverDomain, () => {
         console.log(`Процесс ${process.pid} запущен и слушает порт ${config.serverPort} ...`);
     });
 };
